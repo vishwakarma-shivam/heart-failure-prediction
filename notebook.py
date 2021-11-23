@@ -1,4 +1,4 @@
-imp
+import streamlit as st
 
 nb = '''
 <a id="toc"></a>
@@ -6115,3 +6115,6 @@ if (outputEl) {{
 ![](https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif)
 
 '''
+
+def shownotebook():
+    st.markdown(nb)
