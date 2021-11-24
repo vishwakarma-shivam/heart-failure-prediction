@@ -1,10 +1,8 @@
 import streamlit as st
 
 nb = '''
-<a id="toc"></a>
-
-<h3 class="list-group-item list-group-item-action active" data-toggle="list" role="tab" aria-controls="home">Table of Contents</h3>
-    
+# Notebook
+### Table of Content   
 * [Data](#0)
 * [What Problem We Have and Which Metric to Use?](#1)
 
@@ -897,9 +895,6 @@ if (outputEl) {{
 - Bad news guys....
 - Men are almost 2.44 times more likely have a heart disease than women.
 
-![](https://media.giphy.com/media/MuAz5ozYsaC7rkRUe2/giphy-downsized-large.gif)
-
-gif credit: https://giphy.com
 
 ### **Chest Pain Type and Heart Disease**
 
@@ -1589,17 +1584,7 @@ result_df4
 
 
 
-- With their deafult values, Catboost did better job than the other two models.
-
-- Now let's see Catboost
-
-![](https://avatars.mds.yandex.net/get-bunker/56833/dba868860690e7fe8b68223bb3b749ed8a36fbce/orig)
-
-image credit: https://avatars.mds.yandex.net
-
-<a id="12"></a>
-<font color="lightseagreen" size=+1.5><b> CATBOOST</b></font>
-
+### Catboost
 <a href="#toc" class="btn btn-primary btn-sm" role="button" aria-pressed="true" style="color:white" data-toggle="popover">Table of Contents</a>
 
 **Purpose**: 
@@ -6112,9 +6097,12 @@ if (outputEl) {{
 - We looked at the feature importance.
 
 
-![](https://media.giphy.com/media/3o7TKUM3IgJBX2as9O/giphy.gif)
 
 '''
 
 def shownotebook():
+    data = open('notebook.ipynb')
+    st.download_button(label='Download Notebook', data=data, file_name ="heart_failure_notebook.ipynb", mime="text/ipynb"  )
+    st.markdown("---")
     st.markdown(nb)
+    

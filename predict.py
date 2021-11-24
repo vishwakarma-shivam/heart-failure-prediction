@@ -26,11 +26,11 @@ def show_predict_page():
     chestPainType = st.selectbox("Chest Pain Type",  ["Typical Angina (TA)", "Atypical Angina (ATA)", "Non-Anginal Pain (NAP)", "Asymptomatic (ASY)"])
     restingBP = st.number_input("Resting Blood Pressure [mm Hg]", 0, 200)
     cholesterol = st.number_input("Cholesterol",0)
-    fastingBS = st.radio("Fasting Blood Sugar higher than 120 mg/d ?", ["No", "Yes"])
+    fastingBS = st.radio("Fasting Blood Sugar higher than 120 mg/dl ?", ["No", "Yes"])
     restingECG = st.selectbox("Resting ECG", ["Normal","ST","LVH"])
     maxHR = st.slider("Maximum Heart Rate",60,202)
     exerciseAngina = st.radio("Excercise Angina",["No","Yes"])
-    oldpeak = st.number_input('Oldpeak', 0.0,5.0)
+    oldpeak = st.slider('Oldpeak', 0.0,5.0)
     stSlope = st.selectbox("ST Slope",["Up","Flat","Down"])
 
     chestPainType = chstPain(chestPainType)
