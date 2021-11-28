@@ -59,9 +59,16 @@ def showtreatement():
     st.markdown(treatment)
 
 def showlearncvd():
+    st.header("Learn about CVD's ")
+    c1, c2 =st.columns(2)
+    
     opt = ("Overview", "Symptoms", "Treatment")
-    select = st.radio("",opt)
+    with c1:
+        select = st.radio("",opt)
+    with c2:
+        st.image('./images/heartim.jpg')
     if select == opt[0]: showoverview()
     elif select == opt[1]:showsymptoms()
     elif select == opt[2]:showtreatement()
+
     st.markdown("Credit [WHO](https://www.who.int/health-topics/cardiovascular-diseases)")

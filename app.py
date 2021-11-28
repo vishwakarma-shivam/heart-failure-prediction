@@ -22,4 +22,4 @@ elif opt == options[4]: showData()
 elif opt == options[5]: show_explore_page()
 elif opt == options[6]: shownotebook()
 elif opt == options[7]: showaboutme()
-elif opt == options[8]: showData()
+elif opt == options[8]: pass
