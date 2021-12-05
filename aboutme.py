@@ -14,7 +14,6 @@ def showaboutme():
     st.image('./images/hero2.png', caption = "Shivam Vishwakarma",width = 150)
     st.markdown("Computer Science student at **Global Engineering College, Jabalpur**")
     st.markdown("`I am currently enrolled in *Bachelor's degree* course in Computer Science.I made a quite few projects that you can check in my github🐱‍🏍 profile.`")
-
     st.markdown("My public profiles: ")
     c1,c2,c3,c4,c5 = st.columns(5)
     with c1:
