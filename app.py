@@ -18,7 +18,8 @@ options = ('Predict',
 'Explore Data',
 'View Notebook',
 'Know the Developer',
-'Credits',
+
+
 )
 st.sidebar.markdown("### Heart Failure Prediction Using Machine Learning")
 opt = st.sidebar.radio("Menu",options)
@@ -33,4 +34,4 @@ elif opt == options[5]: showData()
 elif opt == options[6]: show_explore_page()
 elif opt == options[7]: shownotebook()
 elif opt == options[8]: showaboutme()
-elif opt == options[9]: pass
+

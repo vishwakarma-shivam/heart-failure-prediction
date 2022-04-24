@@ -73,6 +73,7 @@ def show_predict_page():
         st.markdown(f"You are _{result}_ .")
 
         st.markdown("##### Precautions: ")
+        
         if(restingBP>90):
             bp_info = '''
             - A normal blood pressure level is less than 120/80 mmHg.
